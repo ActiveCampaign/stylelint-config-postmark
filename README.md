@@ -1,16 +1,16 @@
-# stylelint-config-wildbit
-Wildbit-specific config for [Stylelint](https://stylelint.io).
+# stylelint-config-postmark
+Postmark-specific config for [Stylelint](https://stylelint.io).
 
 ## How to use
 
 Adding Stylelint to the project:
 
-1. `npm install -D stylelint wildbit/stylelint-config-wildbit`
+1. `npm install -D stylelint ActiveCampaign/stylelint-config-postmark`
 2. Add following code to your `package.json`:
 
 ```json
 "stylelint": {
-  "extends": "stylelint-config-wildbit"
+  "extends": "stylelint-config-postmark"
 },
 "scripts": {
   "lint:css": "stylelint --syntax scss ./**/*.scss",
