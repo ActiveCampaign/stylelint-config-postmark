@@ -1,11 +1,11 @@
 {
-  "name": "stylelint-config-wildbit",
+  "name": "stylelint-config-postmark",
   "version": "13.3.0",
   "description": "Shareable Stylelint config",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wildbit/stylelint-config-wildbit.git"
+    "url": "git+https://github.com/ActiveCampaign/stylelint-config-postmark.git"
   },
   "keywords": [
     "stylelint",
@@ -14,9 +14,9 @@
   "author": "Eugene Fedorenko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wildbit/stylelint-config-wildbit/issues"
+    "url": "https://github.com/ActiveCampaign/stylelint-config-postmark/issues"
   },
-  "homepage": "https://github.com/wildbit/stylelint-config-wildbit#readme",
+  "homepage": "https://github.com/ActiveCampaign/stylelint-config-postmark#readme",
   "dependencies": {
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-order": "^5.0.0",
