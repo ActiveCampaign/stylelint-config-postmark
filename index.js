@@ -5,89 +5,66 @@ module.exports = {
     'stylelint-scss'
   ],
   rules: {
-    // @ rule
-    'at-rule-empty-line-before': null,
+    // stylelint-config-recommended: Disable & Overwrite
+    'block-no-empty': null,
+    'font-family-no-missing-generic-family-keyword': null,
+    'no-descending-specificity': null,
 
-    // Color
-    'color-hex-case': 'upper', // 'lower' in standard
-    'color-named': 'never',
 
-    // Font family
-    'font-family-name-quotes': 'always-where-recommended',
+    // stylelint-config-recommended: Set to warning
+    'no-duplicate-selectors': [true, {'severity': 'warning'}],
 
-    // Number
-    'number-leading-zero': null, // 'always' in standard
 
-    // String
-    'string-quotes': 'single',
-
-    // Value
-    'value-keyword-case': null, // 'lower' in standard
-    'value-no-vendor-prefix': [true, {'severity': 'warning'}],
-    'length-zero-no-unit': [true, {'severity': 'warning'}],
-
-    // Property
-    'property-no-vendor-prefix': [true, {'severity': 'warning'}],
-
-    // Declaration
-    'declaration-colon-space-after': null, // 'always-single-line' in standard
-    'declaration-colon-newline-after': null, // 'always-multi-line' in standard
-
-    // Declaration block
-    'declaration-block-no-redundant-longhand-properties': [true, {'severity': 'warning'}],
-    'declaration-block-semicolon-newline-before': 'never-multi-line',
-    'declaration-empty-line-before': null, // 'always' in standard
-
-    // Block
-    'block-closing-brace-space-after': 'always-single-line',
-    'block-opening-brace-newline-before': 'never-single-line',
-    'block-no-empty': null, // true in recommended
-
-    // Selector
-    'selector-class-pattern': null,
-    'selector-max-universal': 0,
-    'selector-no-vendor-prefix': [true, {'severity': 'warning'}],
-
-    // Selector list
-    'selector-list-comma-newline-before': 'never-multi-line',
-    'selector-list-comma-space-after': 'always-single-line',
-
-    // Media feature
-    'media-feature-name-no-vendor-prefix': [true, {'severity': 'warning'}],
-
-    // Comment
-    'comment-empty-line-before': null, // 'always' in standard
-
-    // General / Sheet
-    indentation: null, // 2 in standard
-    'max-empty-lines': 3, // 1 in standard
+    // stylelint-config-standard: Disable & Overwrite
+    'color-hex-case': 'upper',
+    'comment-empty-line-before': null,
+    'declaration-colon-newline-after': null,
+    'declaration-colon-space-after': null,
+    'declaration-empty-line-before': null,
+    'indentation': null,
+    'max-empty-lines': 3,
     'max-line-length': null,
-    'rule-empty-line-before': null, // true in standard
-    'no-duplicate-selectors': [true, {'severity': 'warning'}], // true in recommended
-    'no-descending-specificity': null, // true in recommended
-    'no-unknown-animations': true,
+    'number-leading-zero': null,
+    'rule-empty-line-before': null,
+    'selector-class-pattern': null,
+    'string-quotes': 'single',
+    'value-keyword-case': null,
 
 
-    // Plugin stylelint-scss
-    // ---------------------
+    // stylelint-config-standard: Set to warning
+    'declaration-block-no-redundant-longhand-properties': [true, {'severity': 'warning'}],
+    'length-zero-no-unit': [true, {'severity': 'warning'}],
+    'media-feature-name-no-vendor-prefix': [true, {'severity': 'warning'}],
+    'property-no-vendor-prefix': [true, {'severity': 'warning'}],
+    'selector-no-vendor-prefix': [true, {'severity': 'warning'}],
+    'value-no-vendor-prefix': [true, {'severity': 'warning'}],
 
+
+    // stylelint-config-recommended-scss
     'scss/no-global-function-names': null,
 
-    // @each
-    'scss/at-each-key-value-single-line': true,
 
-    // @function
+    // stylelint-config-standard-scss
+    'at-rule-empty-line-before': null,
     'scss/at-function-parentheses-space-before': 'always',
-
-    // @import
-    'scss/at-import-partial-extension-blacklist': ['scss'],
-
-    // $ variable
     'scss/dollar-variable-colon-space-after': 'at-least-one-space',
     'scss/dollar-variable-empty-line-before': null,
+    'scss/dollar-variable-pattern': null,
 
-    // Selector
+
+    // Custom rules
+    'block-closing-brace-space-after': 'always-single-line',
+    'block-opening-brace-newline-before': 'never-single-line',
+    'color-named': 'never',
+    'declaration-block-semicolon-newline-before': 'never-multi-line',
+    'font-family-name-quotes': 'always-where-recommended',
+    'no-unknown-animations': true,
+    'scss/at-each-key-value-single-line': true,
+    'scss/at-import-partial-extension-blacklist': ['scss'],
     'scss/selector-no-redundant-nesting-selector': true,
+    'selector-list-comma-newline-before': 'never-multi-line',
+    'selector-list-comma-space-after': 'always-single-line',
+    'selector-max-universal': 0,
 
 
     // Plugin stylelint-order
