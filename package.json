@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-postmark",
-  "version": "13.3.0",
+  "version": "14.16.0",
   "description": "Postmark Stylelint Config",
   "main": "index.js",
   "repository": {
