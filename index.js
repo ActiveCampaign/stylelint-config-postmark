@@ -7,8 +7,6 @@ module.exports = {
   rules: {
     // @ rule
     'at-rule-empty-line-before': null,
-    'at-rule-no-unknown': null,
-    'scss/at-rule-no-unknown': true,
 
     // Color
     'color-hex-case': 'upper', // 'lower' in standard
@@ -16,14 +14,6 @@ module.exports = {
 
     // Font family
     'font-family-name-quotes': 'always-where-recommended',
-
-    // Function
-    'function-comma-space-after': 'always-single-line',
-    'function-comma-space-before': 'never',
-    'function-name-case': 'lower',
-    'function-parentheses-space-inside': 'never-single-line',
-    'function-url-quotes': 'always',
-    'function-whitespace-after': 'always',
 
     // Number
     'number-leading-zero': null, // 'always' in standard
@@ -57,7 +47,6 @@ module.exports = {
     'selector-class-pattern': null,
     'selector-max-universal': 0,
     'selector-no-vendor-prefix': [true, {'severity': 'warning'}],
-    'selector-attribute-quotes': 'always',
 
     // Selector list
     'selector-list-comma-newline-before': 'never-multi-line',
@@ -87,19 +76,14 @@ module.exports = {
     // @each
     'scss/at-each-key-value-single-line': true,
 
-    // @else
-    'scss/at-else-if-parentheses-space-before': 'always',
-
     // @function
     'scss/at-function-parentheses-space-before': 'always',
 
     // @import
-    'scss/at-import-no-partial-leading-underscore': true,
     'scss/at-import-partial-extension-blacklist': ['scss'],
 
     // $ variable
     'scss/dollar-variable-colon-space-after': 'at-least-one-space',
-    'scss/dollar-variable-colon-space-before': 'never',
     'scss/dollar-variable-empty-line-before': null,
 
     // Selector
@@ -314,11 +298,3 @@ module.exports = {
     ],
   }
 }
-
-// font-family-no-missing-generic-family-keyword - recommended
-// no-duplicate-at-import-rules - recommended
-// keyframes-name-pattern
-// no-empty-first-line
-// alpha-value-notation
-// color-function-notation
-// hue-degree-notation
