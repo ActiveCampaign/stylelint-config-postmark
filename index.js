@@ -27,6 +27,7 @@ module.exports = {
     'number-leading-zero': null,
     'rule-empty-line-before': null,
     'selector-class-pattern': null,
+    'selector-id-pattern': null,
     'string-quotes': 'single',
     'value-keyword-case': null,
 
@@ -41,12 +42,14 @@ module.exports = {
 
 
     // stylelint-config-recommended-scss
+    'scss/at-extend-no-missing-placeholder': null,
     'scss/no-global-function-names': null,
 
 
     // stylelint-config-standard-scss
     'at-rule-empty-line-before': null,
     'scss/at-function-parentheses-space-before': 'always',
+    'scss/at-mixin-argumentless-call-parentheses': null,
     'scss/dollar-variable-colon-space-after': 'at-least-one-space',
     'scss/dollar-variable-empty-line-before': null,
     'scss/dollar-variable-pattern': null,
