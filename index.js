@@ -274,7 +274,7 @@ module.exports = {
         'animation-fill-mode',
         'animation-play-state',
       ],
-      {'severity': 'warning'}
+      {'severity': 'error'}
     ],
   }
 }
